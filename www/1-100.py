@@ -24,7 +24,7 @@ while i<=100:
     if(i%2==0):
      sum += i
     i+=1
-print("1~100的累积和为:%d" % sum)
+print("1~100之间偶数的累积和:%d" % sum)
 
 
 
@@ -39,4 +39,4 @@ sum =0
 for i in range(1,101):
     if(i%2==0):
      sum+=i
-print("1~100的累积和为:%d" % sum)
+print("1~100之间偶数的累积和:%d" % sum)
