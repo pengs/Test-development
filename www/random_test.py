@@ -14,10 +14,9 @@ def createPhone():
   str='0123456789'  #0-9随机取
 
 
-
   try:
       with open("/Users/macbook/Desktop/100number.xls", "w") as f:#生成需要的文本格式
-        for i in range(15000):#循环生成
+        for i in range(1000):#循环生成
          number=(random.choice(list)+"".join(random.choice(str) for i in range(8))+"\n")
          #random.choice() 从序列中随机选取一个元素;--将号段+随机数拼接起来；换行显示
          f.write(number)#写入到文件中
