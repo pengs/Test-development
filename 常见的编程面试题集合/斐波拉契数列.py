@@ -15,7 +15,7 @@ def fibonacci():
     for i in range(10):
         yield b
         a, b = b, a + b
-for i in fibonacci(1):
+for i in fibonacci():
         print(i),
 
 

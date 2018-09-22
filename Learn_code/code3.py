@@ -50,11 +50,11 @@ if 判断练习
 求最小值使用python的mix()函数
 
 '''
-#作业1
-list=[1,2,3,8,1,100]
-print(max(list))
-print(min(list))
-print("=="*20)
+# #作业1
+# list=[1,2,3,8,1,100],
+# print(max(list))
+# print(min(list))
+# print("=="*20)
 
 
 
@@ -68,10 +68,13 @@ print("=="*20)
 '''
 #作业2
 
-# list=[1,2,3,4,11,2,3,4,"222"]
-# for i in list:
-#   print("11出现的次数:",i.count(list[]))
-
+# li=[1,2,3,4,11,2,3,4,"222"],
+# ls={}
+# for i in li:
+#   print(i)
+#   ls[i]=li.count(i)
+# print(ls)
+#
 # print("=="*20)
 # str="hello world"
 # print("h出现的次数:",str.count("h"))
@@ -82,23 +85,17 @@ print("=="*20)
 # print("d出现的次数:",str.count("d"))
 
 
-''' 统计字符串中每个字符的个数
-这里使用了python的内置函数，刚开始将ll写为列表，会报错TypeError: list indices must be integers or slices, not str
-翻译一下，列表索引必须是整数或切片，而不是字符.  i是输入的字符串的每个字符，所以报错。改为字典的{}就OK了'''
-
-# ss = input("请输入一串字符:")
+# str = "hello world"
 # ll = {}
-# '''错误示例：ll=[]'''
-#
-# for i in ss:
+# for i in str:
+#     ll[i] = str.count(i)
 #     print(i)
-#     ll[i] = ss.count(i)
 #     '''ll[i]中i为字符，ll若为列表不允许，ll为字典表示该位置的值'''
 # print(ll)
+#
 
 
-
-'''
+'''-
 3.编写程序，完成以下要求：
 完成一个路径的组装
 先提示用户多次输入路径，最后显示一个完成的路径，比如/home/python/ftp/share
@@ -106,18 +103,14 @@ print("=="*20)
 分析问题解决方式:通过字符串的相加可以实现
 '''
 #定义一个字符串
-#
-# for i in range(3):
-#     filepath = input("请输入路径:")
-#     if i==3:
-#         break
-#     print(filepath)
+import os
 
-#
-# filepath1='/Desktop'
-# filepath2='/excel'
-
-
+filepath1 = input("请输入路径地址:")
+filepath2 = input("请输入路径地址:")
+path=os.path.join(filepath1,filepath2)
+path1=filepath1+filepath2
+print("输入路径地址:%s"%path)
+print("输入路径地址:%s"%path1)
 
 
 '''
@@ -135,9 +128,11 @@ print("=="*20)
 
 '''
 5.在不用其他变量的情况下，交换a、b变量的值
-'''
-a=1
-b=2
-a,b=b,a
-print(a)
-print(b)
+# '''
+# a=1
+# b=2
+# a,b=b,at
+# print(a)
+# print(b)
+
+
