@@ -26,19 +26,83 @@ str对象和bytes对象可以使用.encode() (str -> bytes) or .decode() (bytes 
 # '''
 #
 #列表
-a=list(range(10))
-b=(1,2,3,4)
-c={'m':49,'n':50}
-d = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+# a=list(range(10))
+# b=(1,2,3,4)
+# c={'m':49,'n':50}
+# d = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+#
+# print("这是一个列表，值是可以进行操作修改:",a)
+# print(type(a))
+# print("这是一个元祖，数据不可修改:",b)
+# print(type(b))
+# print("这是一个字典，字典的值是可以操作修改:",c)
+# print(type(c))
+# # 集合（set）是一个无序不重复元素的序列。
+# print("这是一个集合:",d)
+# print(set(d))
 
-print("这是一个列表，值是可以进行操作修改:",a)
-print(type(a))
-print("这是一个元祖，数据不可修改:",b)
-print(type(b))
-print("这是一个字典，字典的值是可以操作修改:",c)
-print(type(c))
-# 集合（set）是一个无序不重复元素的序列。
-print("这是一个集合:",d)
-print(set(d))
+#只输出10-5
+# for i in range(10,-1,-1):
+#     if i <5:
+#         break
+#     print(i)
+#
+# for i in range(10,-1,-1):
+#     if i>=5:
+#         print(i)
+#
+# #只输出5
+# for i in range(10,-1,-1):
+#     if i>5 or i<5:
+#         continue
+#     else:
+#         print(i)
+#
+# for i in range(10,-1,-1):
+#     if i==5:
+#      print(i)
+#      break
 
+#打印8次停止
+# for i in range(10):
+#     if i==8:
+#         break
+#     else:
+#         print("no break!!!")
+
+#continue 语句是一个删除的效果，他的存在是为了删除满足循环条件下的某些不需要的成分:
+#for。。。else循环
+# for i in range(10):
+#     continue
+# else:
+#     print("no break")
+#
+#打印偶数  打印0-10之间的奇数，可以用continue语句跳过某些循环：
+# for i in range(10):
+#     if i %2==0:
+#         continue
+#     print(i)
+
+i=0
+while i<10:
+    if i % 2 == 0:
+        continue
+    print(i)
+    i += 1
+
+
+
+# n=5
+# while n>=1:
+# 	print(n)
+# 	n-=1
+#
+
+# n=5
+# while n>=1:
+#     if n>2:
+#      print(n)
+#     else:
+#       break
+#     n-=1
 
