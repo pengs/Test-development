@@ -87,8 +87,7 @@ for i in range(10,-1,-1):
 
 # n=5
 # while n>=1:
-# 	print(n)
-# 	n-=1
+# 	print(n)# 	n-=1
 #
 
 # n=5
@@ -121,4 +120,5 @@ for i in str:
     str1=str1+i+" "
 print(str1.strip( ))
 print(str1.split(" "))
+
 
