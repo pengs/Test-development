@@ -41,27 +41,27 @@ str对象和bytes对象可以使用.encode() (str -> bytes) or .decode() (bytes 
 # print("这是一个集合:",d)
 # print(set(d))
 
-#只输出10-5
-# for i in range(10,-1,-1):
-#     if i <5:
-#         break
-#     print(i)
-#
-# for i in range(10,-1,-1):
-#     if i>=5:
-#         print(i)
-#
-# #只输出5
-# for i in range(10,-1,-1):
-#     if i>5 or i<5:
-#         continue
-#     else:
-#         print(i)
-#
-# for i in range(10,-1,-1):
-#     if i==5:
-#      print(i)
-#      break
+# 只输出10-5
+for i in range(10,-1,-1):
+    if i <5:
+        break
+    print(i)
+
+for i in range(10,-1,-1):
+    if i>=5:
+        print(i)
+
+#只输出5
+for i in range(10,-1,-1):
+    if i>5 or i<5:
+        continue
+    else:
+        print(i)
+
+for i in range(10,-1,-1):
+    if i==5:
+     print(i)
+     break
 
 #打印8次停止
 # for i in range(10):
@@ -83,13 +83,6 @@ str对象和bytes对象可以使用.encode() (str -> bytes) or .decode() (bytes 
 #         continue
 #     print(i)
 
-i=0
-while i<10:
-    if i % 2 == 0:
-        continue
-    print(i)
-    i += 1
-
 
 
 # n=5
@@ -105,4 +98,27 @@ while i<10:
 #     else:
 #       break
 #     n-=1
+
+
+
+'''
+把一个字符串"abcdefgh",插入到一个list每一个字母站一个list中的一个元素位置
+'''
+str = 'abcdefgh'
+#最便捷
+print(list(str))
+
+#2
+list1=[]
+for i in str:
+   list1.append(i)
+print(list1)
+
+
+#3钟
+str1=""
+for i in str:
+    str1=str1+i+" "
+print(str1.strip( ))
+print(str1.split(" "))
 

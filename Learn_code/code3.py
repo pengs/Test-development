@@ -8,18 +8,18 @@
 if 判断练习
 '''
 
-# month=9
-# birth_month=int(input("您输入生日月只能是1~12的数字:"))
-# if 1<=birth_month<=12:
-#     print(" ")
-#     if birth_month == month:
-#         print("输入的生日月:%d月,恭喜是你的生日月"%birth_month)
-#     elif birth_month < month:
-#         print("输入的生日月:%d月,小于你的生日月"%birth_month)
-#     else:
-#         print("输入的生日月:%d月,大于你的生日月"%birth_month)
-# else:
-#       print("输入的生日月:%d月\n输入错误，请重新输入......"%birth_month)
+month=9
+birth_month=int(input("您输入生日月只能是1~12的数字:"))
+if 1<=birth_month<=12:
+    print(" ")
+    if birth_month == month:
+        print("输入的生日月:%d月,恭喜是你的生日月"%birth_month)
+    elif birth_month < month:
+        print("输入的生日月:%d月,小于你的生日月"%birth_month)
+    else:
+        print("输入的生日月:%d月,大于你的生日月"%birth_month)
+else:
+      print("输入的生日月:%d月\n输入错误，请重新输入......"%birth_month)
 
 
 '''
@@ -29,17 +29,17 @@ if 判断练习
 如果输入r，那么在读取一次字母，并打印
 用死循环实现
 '''
-# n=3
-# while 1:
-#     str = input("三种字体:")
-#     if str=="e":
-#         break
-#     elif str=="a":
-#         continue
-#     elif str=="r":
-#          str = input("三种字体")
-#          print(r)
-#     n-=1
+n=3
+while 1:
+    str = input("三种字体:")
+    if str=="e":
+        break
+    elif str=="a":
+        continue
+    elif str=="r":
+         str = input("三种字体")
+         print(r)
+    n-=1
 
 
 '''
@@ -131,7 +131,7 @@ print("输入路径地址:%s"%path1)
 # '''
 # a=1
 # b=2
-# a,b=b,at
+# a,b=b,a
 # print(a)
 # print(b)
 
