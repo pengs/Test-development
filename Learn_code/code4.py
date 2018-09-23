@@ -33,7 +33,7 @@ str.join(元组、列表、字典、字符串) 之后生成的只能是字符串
 使用lend命令，减去一本存在的书
 如果不存在，需要提示一下
 输入"." ，退出程序
-使用getall命令:可以查询所有没有借出去的书，
+使用getall命令:可以查询所有没有借出去的书， 你 
 '''
 
 library=[]
@@ -41,7 +41,7 @@ while 1:
     command = input("输入你想要操作的命令:")
     command =command.strip() # strip该方法只能删除开头或是结尾的字符，不能删除中间部分的字符。主要是为了防止用户输入空格过滤掉
     if "add " in  command: # 增加
-        library.append(command.split(" ")[1])
+        library.append(command.split(" ")[1]) # 根据输入的命令 拆分 只取书名
         print("图书添加成功！")
     elif "lend " in  command:# 判断借出
         if command.split(" ")[1] in library:
