@@ -32,4 +32,65 @@
 
 
 
+'''
+除法函数，需要处理除数不能为0
+
+'''
+# def div(a,b):
+#     if not isinstance(a,(int,float,complex)):
+#         return None
+#     if not isinstance(b,(int,float,complex)):
+#         return None
+#     if b==0:
+#         print("除数不能为0")
+#         return None
+#     return a/b
+#
+# print(div(10,0))
+#
+
+
+'''
+1.写一个函数，统计一下这一句话中的数字个数
+You very beautiful I like very you 666! I am 20 years old!
+2.统计一下字母的个数
+3.统计一下字母和数字个数
+4.统计一下非字母和非数字的个数
+'''
+s='You very 666 beautiful I like very you 666! I am 20 years old!'
+def count_digit(s):
+    if not isinstance(s,str):
+        print("这不是一个unicode字符串")
+        return 0
+    result=0
+    for i in s:
+        # if i in "0123456789":
+        if ord(i)>=48 and ord(i)<=57:
+            result+=1
+    return result
+print("字符串中的出现数字的个数为:%d个"%count_digit(s))
+
+
+#2统计一下字母的个数
+def count_letters(s):
+    # if not isinstance(s,str):
+    #     print("这不是一个unicode字符串")
+    #     return 0
+    result=0
+    for i in s:
+        if (ord(i) >= 97 and ord(i) <= 122) or (ord(i) >= 65 and ord(i) <= 90):
+           result += 1
+    return result
+print("字符串中的字母的个数为:%d个"%count_letters(s))
+
+
+#3统计一下字母和数字个数
+print("数字和字符串一共:%d个"%(count_digit(s)+count_letters(s)))
+
+#4统计一下非字母和非数字的个数
+
+def count_sum(s):
+    count=len(s)
+    return count-(count_digit(s)+count_letters(s))
+print(count_sum(s))
 
