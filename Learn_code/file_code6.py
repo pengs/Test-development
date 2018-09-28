@@ -36,18 +36,17 @@
 除法函数，需要处理除数不能为0
 
 '''
-# def div(a,b):
-#     if not isinstance(a,(int,float,complex)):
-#         return None
-#     if not isinstance(b,(int,float,complex)):
-#         return None
-#     if b==0:
-#         print("除数不能为0")
-#         return None
-#     return a/b
-#
-# print(div(10,0))
-#
+def div(a,b):
+    if not isinstance(a,(int,float,complex)):
+        return None
+    if not isinstance(b,(int,float,complex)):
+        return None
+    if b==0:
+        print("除数不能为0")
+        return None
+    return a/b
+
+print(div(10,0))
 
 
 '''
@@ -78,7 +77,7 @@ def count_letters(s):
     #     return 0
     result=0
     for i in s:
-        if (ord(i) >= 97 and ord(i) <= 122) or (ord(i) >= 65 and ord(i) <= 90):
+        if (ord(i) >= 97 and ord(i) <= 122) or (ord(i) >= 65 and ord(i) <= 90):# 大写字母''小写字母
            result += 1
     return result
 print("字符串中的字母的个数为:%d个"%count_letters(s))
@@ -93,4 +92,31 @@ def count_sum(s):
     count=len(s)
     return count-(count_digit(s)+count_letters(s))
 print(count_sum(s))
+
+
+
+
+'''
+ord() 函数
+返回对应的 ASCII 数值，或者 Unicode 数值
+'''
+s='i like you 666'
+
+#统计数字个数
+count_number=0
+for i in s:
+    if i in '0123456789':
+        count_number+=1
+print(count_number)
+
+#统计字母个数
+count_str=0
+for i in s:
+    if (ord(i) >= 97 and ord(i) <= 122) or (ord(i) >= 65 and ord(i) <= 90):
+        count_str+=1
+print(count_str)
+
+#统计非字母和非数字个数
+print(len(s)-(count_number+count_str))
+
 
