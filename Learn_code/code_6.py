@@ -11,24 +11,24 @@
 
 '''
 
-# import  os
-# #os.path.join() 将分离的部分合成一个整体
-# filename=os.path.join('/Users/macbook/awesome','Learn_code')
-# print (filename)
+import  os
+#os.path.join() 将分离的部分合成一个整体
+filename=os.path.join('/Users/macbook/awesome','Learn_code')
+print (filename)
 #
 #
-# #os.path.splitext()将文件名和扩展名分开
-# fname,fename=os.path.splitext('/Users/macbook/awesome/Learn_code/*.py')
-# print('fname is:',fname)
-# print('fname is:',fename)
-#
-#
-# #os.path.split（）返回文件的路径和文件名
-# dirname,filename=os.path.split('/home/ubuntu/python_coding/split_func/split_function.py')
-# print (dirname,filename)
+#os.path.splitext()将文件名和扩展名分开
+fname,fename=os.path.splitext('/Users/macbook/awesome/Learn_code/*.py')
+print('fname is:',fname)
+print('fname is:',fename)
 
-# 可以封装成函数，方便 Python 的程序调用
-#
+
+#os.path.split（）返回文件的路径和文件名
+dirname,filename=os.path.split('/home/ubuntu/python_coding/split_func/split_function.py')
+print (dirname,filename)
+
+可以封装成函数，方便 Python 的程序调用
+
 
 
 
