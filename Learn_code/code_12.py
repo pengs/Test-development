@@ -39,12 +39,11 @@ with open('/Users/macbook/Desktop/c.txt','r',encoding='utf-8')as f:
 '''
 文件替换  将一个文件其中的test字符，修改为其他dapeng
 '''
-with open('/Users/macbook/Desktop/A.txt','r+',encoding='utf-8' )  as fp2:
-    data=fp2.readlines()
-with open('/Users/macbook/Desktop/A.txt', 'w+', encoding='utf-8')  as fp2:
-    for i in data:
-        fp2.write(i)
-        print(i.replace('test','dapeng++'))
+with open('/Users/macbook/Desktop/A.txt','r+') as fp1:
+        for i in fp1.readlines():
+            fp1.write(i)
+            print(i.replace('test','dapeng'),end="")
+
 
 
 
