@@ -27,7 +27,7 @@ print('fname is:',fename)
 dirname,filename=os.path.split('/home/ubuntu/python_coding/split_func/split_function.py')
 print (dirname,filename)
 
-可以封装成函数，方便 Python 的程序调用
+#可以封装成函数，方便 Python 的程序调用
 
 
 
