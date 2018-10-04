@@ -50,11 +50,11 @@ while 1:
 求最小值使用python的mix()函数
 
 '''
-# #作业1
-# list=[1,2,3,8,1,100],
-# print(max(list))
-# print(min(list))
-# print("=="*20)
+#作业1
+list=[1,2,3,8,1,100],
+print(max(list))
+print(min(list))
+print("=="*20)
 
 
 
@@ -68,12 +68,12 @@ while 1:
 '''
 #作业2
 
-# li=[1,2,3,4,11,2,3,4,"222"],
-# ls={}
-# for i in li:
-#   print(i)
-#   ls[i]=li.count(i)
-# print(ls)
+li=[1,2,3,4,11,2,3,4,"222"],
+ls={}
+for i in li:
+  print(i)
+  ls[i]=li.count(i)
+print(ls)
 #
 # print("=="*20)
 # str="hello world"
@@ -85,14 +85,14 @@ while 1:
 # print("d出现的次数:",str.count("d"))
 
 
-# str = "hello world"
-# ll = {}
-# for i in str:
-#     ll[i] = str.count(i)
-#     print(i)
-#     '''ll[i]中i为字符，ll若为列表不允许，ll为字典表示该位置的值'''
-# print(ll)
-#
+str = "hello world"
+ll = {}
+for i in str:
+    ll[i] = str.count(i)
+    print(i)
+    '''ll[i]中i为字符，ll若为列表不允许，ll为字典表示该位置的值'''
+print(ll)
+
 
 
 '''-
@@ -129,10 +129,10 @@ print("输入路径地址:%s"%path1)
 '''
 5.在不用其他变量的情况下，交换a、b变量的值
 # '''
-# a=1
-# b=2
-# a,b=b,a
-# print(a)
-# print(b)
+a=1
+b=2
+a,b=b,a
+print(a)
+print(b)
 
 

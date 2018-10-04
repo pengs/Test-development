@@ -10,14 +10,14 @@
 Python join() 方法用于将序列中的元素以指定的字符连接生成一个新的字符串。
 str.join(元组、列表、字典、字符串) 之后生成的只能是字符串。
 '''
-# list=['a', 'b', 'c', 'd', 'e', 'f', 'g']
-# print("拼出的字符中结果是:%s"%(list[0]+list[3]+list[-1]))
-#
-# print("拼出的字符中结果是:%s"%"".join(list[::3])) # "".join()
-#
-# seq = {'hello':'nihao','good':2,'boy':3,'dapeng':4}
-# print('_'.join(seq)) # 字典只对键进行连接
-#
+list=['a', 'b', 'c', 'd', 'e', 'f', 'g']
+print("拼出的字符中结果是:%s"%(list[0]+list[3]+list[-1]))
+
+print("拼出的字符中结果是:%s"%"".join(list[::3])) # "".join()
+
+seq = {'hello':'nihao','good':2,'boy':3,'dapeng':4}
+print('_'.join(seq)) # 字典只对键进行连接
+
 #
 
 '''
@@ -37,7 +37,7 @@ str.join(元组、列表、字典、字符串) 之后生成的只能是字符串
 '''
 
 library=[]
-while 1:
+while True:
     command = input("输入你想要操作的命令:")
     command =command.strip() # strip该方法只能删除开头或是结尾的字符，不能删除中间部分的字符。主要是为了防止用户输入空格过滤掉
     if "add " in  command: # 增加

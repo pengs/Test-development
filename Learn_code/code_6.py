@@ -34,7 +34,6 @@
 
 '''
 除法函数，需要处理除数不能为0
-
 '''
 def div(a,b):
     if not isinstance(a,(int,float,complex)):
@@ -46,7 +45,7 @@ def div(a,b):
         return None
     return a/b
 
-print(div(10,0))
+print(div(10,6))
 
 
 '''
