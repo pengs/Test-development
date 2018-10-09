@@ -5,6 +5,15 @@
 # @FileName: code14.py
 
 '''
+1．chr()函数 
+该函数用于将ASCII码值转化为字符串。//chr() 用一个范围在 range（256）内的（就是0～255）整数作参数，返回一个对应的字符。
+string chr (int ascii);  
+2．ord()函数 
+该函数用于将字符串转化为ASCII码值。
+ord（str ） 返回值是对应的十进制整数。
+'''
+
+'''
 1.生成所有的小写字母
 2.生成所有的大写字母
 3.所有的大小写字母
@@ -47,10 +56,23 @@ print('*'*30)
 result = ''
 first_ascii_code = 97 # 定义一个初始值
 for i in range(1,11): 
-    if i %2==0:
-       result+= chr(first_ascii_code+i-32-1)+str(i)
+    if i %2 == 0: # 遇偶数转换
+       result+= chr(first_ascii_code+i-32-1)+ str(i) #小写转换成大写
     else:
-        result+= chr(first_ascii_code+i-1) + str(i)
+        result+= chr(first_ascii_code+i-1) + str(i) # 输出小写
 print(result)
 
+#输出奇数字母和偶数字母到两个列表中，，小写字母
+l1=[]  # 存偶数字母
+l2=[]  # 存奇数字母
+for i  in range(97,123):
+	if i %2==0:
+		l1.append(chr(i))		
+	else:
+		l2.append(chr(i))
+print("存储偶数字母的列表:%s"%l1)
+print("存储奇数字母的列表:%s"%l2)
+		
+
+		
 
