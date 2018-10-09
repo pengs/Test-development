@@ -102,8 +102,15 @@ for i in s1:
 		max_occurence_times_letters.append(i)
 		max_occurence_times = s1.count(i)
 	elif s1.count(i) == max_occurence_times:
-		max_occurence_times_letters.append(i)	
+		max_occurence_times_letters.append(i)
 print(list(set(max_occurence_times_letters)))
+
+
+'''
+str.count(sub, start= 0,end=len(string))
+'''
+# count() 方法用于统计字符串里某个字符出现的次数。可选参数为在字符串搜索的开始与结束位置。
+print (s1.count("x",0,27)) 
 
 	
 
