@@ -28,7 +28,7 @@ print("*" * 30)
 def count_occurence(s,letter):  # 定义一个函数，统计出现的次数
       if isinstance(s,str) or isinstance(letter, str):
             return 0
-            times=0
+      times=0
       if letter not in s:
             return 0
       else: 
