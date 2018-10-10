@@ -20,3 +20,22 @@ print("名字是:%s," % p2.name, "分数为:%d" % p2.score)
 
 s='哈哈'
 print(s)
+
+
+
+#自定义函数，统计字母出现次数
+print("*" * 30)	
+def count_occurence(s,letter):  # 定义一个函数，统计出现的次数
+      if isinstance(s,str) or isinstance(letter, str):
+            return 0
+            times=0
+      if letter not in s:
+            return 0
+      else: 
+            for i in s:
+                  if i == letter:
+                        times+=1
+      return times          
+print(count_occurence("aaa","aaa"))
+print(count_occurence("aaa","b"))
+print(count_occurence("2",2))
