@@ -62,11 +62,11 @@ for i in range(1,11):
         result+= chr(first_ascii_code+i-1) + str(i) # 输出小写
 print(result)
 
-#输出奇数字母和偶数字母到两个列表中，，小写字母
-l1=[]  # 存偶数字母
-l2=[]  # 存奇数字母
+# 输出奇数字母和偶数字母到两个列表中__小写字母
+l1 = []  # 存偶数字母
+l2 = []  # 存奇数字母
 for i  in range(97,123):
-	if i %2==0:
+	if i %2 == 0:
 		l1.append(chr(i))		
 	else:
 		l2.append(chr(i))
