@@ -27,6 +27,12 @@
 ls=[1,2,3,4,5,6]
 print("列表的最大值:",max(ls))
 print("列表的最小值:",min(ls))
+max_number = 0
+for i in ls:
+	if i > max_number:
+		max_number = i 
+print("列表的最大值:",max_number) 
+
 
 # 2、(1)统计字符串，各个字符的个数
 s="I like you,I love you！Laotie Double click 666!"
@@ -70,4 +76,51 @@ s3 = "hello world"
 for i in s3:
 	c[i] += 1
 print("字符串统计的结果为: ",c)
+
+
+
+'''
+生成9位数字的密码
+生成9位字母的密码
+生成9位数字和字母的密码
+'''
+import random
+#生成9位数字的密码
+pass_wd = ""
+for i in range(9):
+	pass_wd += chr(ord('0')+random.randint(0,9))
+print("".join(pass_wd))
+
+#生成9位数字的密码
+number='0123456789'
+print("".join(random.choice(number) for i in range(9)))
+
+print("*"*30)
+#生成9位字母的密码
+s='abcdefghj'
+print("".join(random.choice(s) for i in range(9)))
+
+
+##生成9位数字和字母的密码
+#import string
+#num ="0123456789"
+#print("".join(random.choice(string.ascii_letters[random.randint(0,52)]) for i in range(5))+"".join(random.choice(num) for i in range(4)))
+
+print("*"*30)
+#听课记录 ---- 生成9位数字和字母的密码
+import string
+import random
+
+letter_num = random.randint(1,8) 
+number_num = 9-letter_num
+pass_wd = ""
+
+for i in range(letter_num):
+	pass_wd += string.ascii_letters[random.randint(0,52)]
+
+for i in range(number_num):
+	pass_wd += "0123456789"[random.randint(0,9)]
+	 
+print(pass_wd)
+
 
