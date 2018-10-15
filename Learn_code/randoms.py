@@ -12,7 +12,6 @@ for i in range(3):
     print(random.random())
 
 
-
 print("*"*20+"\n")
 '''random.uniform的函数原型为：random.uniform(a, b)，用于生成一个指定范围内的随机符点数，两个参数其中一个是上限，一个是下限。
 # 如果a > b，则生成的随机数n: a <= n <= b。如果 a <b， 则 b <= n <= a。'''
@@ -65,3 +64,4 @@ list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 slice = random.sample(list, 5)  # 从list中随机获取5个元素，作为一个片断返回
 print (slice)
 print (list)  # 原有序列并没有改变。
+

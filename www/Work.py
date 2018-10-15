@@ -124,3 +124,8 @@ for i in range(number_num):
 print(pass_wd)
 
 
+import sys
+print('1')
+sys.exit()
+print('2')
+
