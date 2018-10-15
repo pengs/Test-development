@@ -19,7 +19,6 @@ for i in range(1, 10):
         print('{}*{}={}'.format(j, i, k), end=' ')#注意这里加上end = ''是防止换行.
     print('')
 
-
 #while 循环9*9
 i=0
 j=0
@@ -35,24 +34,29 @@ while i <9:
 
 # 对10个数进行排序。
 list=[2,3,34,12,89,11,9,8,200]
+
+print(sorted(list))
+
 for i in range(len(list)):
     for j in range(i):
-        if list[i]>list[j]:
-            list[i],list[j]=list[j],list[i]
-print(list)
+        if list[j] > list[i]:
+            list[i],list[j] = list[j],list[i]
+print(list)            
+    
+    
 
 # 从键盘输入一些字符，逐个把它们写到磁盘文件上，直到输入一个 # 为止。
 
-if __name__ == '__main__':
-    from sys import stdout
-    filename = input('输入文件名:\n')
-    fp = open(filename,"w")
-    ch = input('输入字符串:\n')
-    while ch != '#':
-        fp.write(ch)
-        stdout.write(ch)
-        ch = input('')
-    fp.close()
+#if __name__ == '__main__':
+#    from sys import stdout
+#    filename = input('输入文件名:\n')
+#    fp = open(filename,"w")
+#    ch = input('输入字符串:\n')
+#    while ch != '#':
+#        fp.write(ch)
+#        stdout.write(ch)
+#        ch = input('')
+#    fp.close()
 #
 # #利用条件运算符的嵌套来完成此题：学习成绩>=90分的同学用A表示，60-89分之间的用B表示，60分以下的用C表示。
 def function(score):
@@ -65,6 +69,8 @@ def function(score):
 
 if __name__=="__main__":
     function(int(input("请输入分数:")))
+    
+    
 
 #将一个列表的数据复制到另一个列表
 list1=[1,2,3,5,11]
