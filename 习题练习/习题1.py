@@ -80,7 +80,7 @@ print("*" * 30)
 '''
 ls = [[[1,2,3],4,5],7,8,(9,10,(11,12))]
 for i in ls:
-	if isinstance(i,(list,tuple)):
+	if isinstance(i,(list,tuple)):  # isinstance() 函数来判断一个对象是否是一个已知的类型
 		for j in i:
 			if isinstance(j,(list,tuple)):
 				for k in j:
@@ -89,6 +89,3 @@ for i in ls:
 				print(j)
 	else:
 		print(i)					
-			
-
-	
