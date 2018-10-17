@@ -89,3 +89,47 @@ for i in ls:
 				print(j)
 	else:
 		print(i)					
+
+
+
+
+print("*" * 30)
+'''把列表的数字6打印出来'''
+l1 = [[1,2,3,[4,5,6]]]
+
+#通过切片的方式
+print(l1[0][3][2])
+
+
+# 通过循环递归的查找
+for i in l1:
+	if isinstance(i, (list,tuple)): # isinstance() 函数来判断一个对象是否是一个已知的类型
+		print(i)
+		for j in i:
+			if isinstance(j, (list,tuple)):
+				
+				for k in j:
+					if k==6:
+						print(k)
+# 循环递归+切片					
+for i in l1:
+	if isinstance(i, (list,tuple)): # isinstance() 函数来判断一个对象是否是一个已知的类型
+		for j in i[3]:
+			if j == 6:
+				print(j)
+
+
+
+print("*" * 30)						
+'''每个元素+1'''
+l = [1, 2, 3, 4, 5]
+l1 = []
+
+for i in l:
+	l1.append(i+1)
+print(l1)
+
+
+						
+						
+						
