@@ -100,14 +100,12 @@ l1 = [[1,2,3,[4,5,6]]]
 #通过切片的方式
 print(l1[0][3][2])
 
-
 # 通过循环递归的查找
 for i in l1:
 	if isinstance(i, (list,tuple)): # isinstance() 函数来判断一个对象是否是一个已知的类型
 		print(i)
 		for j in i:
 			if isinstance(j, (list,tuple)):
-				
 				for k in j:
 					if k==6:
 						print(k)
@@ -130,6 +128,31 @@ for i in l:
 print(l1)
 
 
-						
-						
+
+'''
+1.遍历列表中嵌套的列表和元祖的所有元素
+2.打印出10
+'''
+for  i  in ls:
+	if isinstance(i, (list,tuple)):
+		for j in i:
+			if j == 10:
+					print("按照需求打印出数字：",j)	
+
+'''
+求100以内的素数
+一个大于1的正整数，如果除了1和它本身以外，不能被其他正整数整除，就叫素数，如2，3，5，7，11，13
+打印出来
+'''
+		
+num=[]
+i=2
+for i in range(2,100):
+	j=2
+	for j in range(2,i):
+		if i % j == 0:
+			break
+	else:
+		num.append(i)
+print("100以内的素数列表为:",num)								
 						
