@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
+
 '''
 1.随机生成一个整数，1-100之间，你最多猜5次，如果大了，就提示，小了，提示小
 猜对了就提示猜中了
@@ -155,4 +156,13 @@ for i in range(2,100):
 	else:
 		num.append(i)
 print("100以内的素数列表为:",num)								
-						
+
+in_num= int(input("请输入数字："))
+if in_num == 1:
+	print(in_num,"不是一个素数")
+for i in range(2,in_num):
+	if in_num %i == 0:
+		print(in_num,"不是一个素数")
+		break
+	if i == in_num-1:
+		print(in_num,"是一个素数")	
