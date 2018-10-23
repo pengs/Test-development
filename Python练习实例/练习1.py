@@ -31,19 +31,14 @@ def award(I):
 		awards = I*0.1
 	elif (I > 10) and (I <= 20):
 		awards = (I - 10) * 0.075 + award(10)
-		
-	elif (I > 20) and (I <= 40):
+	elif 20< I <= 40:
 		awards = (I - 20) * 0.05 + award(20)			
-
-	elif (I > 40) and (I <= 60):
+	elif 40 < I <= 60:
 		awards = (I - 40) * 0.03 + award(40)			
-
-	elif (I > 60) and (I <= 100):
+	elif 60 < I <= 100:
 		awards = (I - 60) * 0.015 + award(60)
-			
 	else:
 		awards = award(100) + (I - 100) * 0.01
-	
 	return awards
 		
 if __name__ == '__main__':
