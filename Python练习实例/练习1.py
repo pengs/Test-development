@@ -95,7 +95,7 @@ if 1<=month<=12: # 判断月份
 			if i < month:
 				d += months[i]
 				i += 1
-		print("您输入的日期是本年的第:%d天"%d)
+		print("今天是一年中的第{}天".format(d))
 	else:
 		print('输入的日期有错误')
 else:
