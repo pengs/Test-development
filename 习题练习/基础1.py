@@ -31,3 +31,23 @@ else:
 		print("你选择两数相减,结果为:{}".format(num1-num2))
 	
 	
+'''
+编写代码，有如下数字
+l1 = [1,2,3,4,5,6,7,8,8]
+能组成多少个互不相同且不重复的数字的两位数
+'''
+
+l1 = [1,2,3,4,5,6,7,8,8]
+l2 = []
+result = 0
+#去掉重复
+for i in l1:
+	if i not in l2:
+		l2.append(i)
+#遍历判断
+for j in l2:
+	for k in l2:
+		if j!=k:
+			result+=1
+			print(j,k)
+print(result)	
