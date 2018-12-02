@@ -99,6 +99,20 @@ print('差集为:{}'.format(result1) )
 
 
 
+#差集2实现方法
+result1 = []
+result2 = []
+
+for i in s:
+	if i in s1:
+		result1.append(i)
+
+s = list(set(s+s1))
+for i in s:
+	if i not in result1:
+		result2.append(i)
+print('差集为:{}'.format(result2) )
+		
 
 
 

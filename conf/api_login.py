@@ -24,6 +24,7 @@ class Jingle_login(unittest.TestCase):  # 定义一个类
         self.post_data = { "account": "MjAwMTA0MTAwMToyMDAxMDQxMDAx" }
         r = requests.post(self.post_url+'/api/v1.1/security/users/login',params=self.post_data,headers=self.post_headers)
         self.result=r.json()
+
         if r.status_code==200:
         # 断言 判断返回值是否符合预期一致
             self.assertEqual(self.result['code'],0)
@@ -32,7 +33,6 @@ class Jingle_login(unittest.TestCase):  # 定义一个类
             self.assertEqual(self.result['data']['username'],"2001041001")
         else:
             print(" 接口无法执行 ")
-            
 
         # print(res)
 

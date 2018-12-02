@@ -67,9 +67,6 @@ for i in range(1,10):
                 print(i*100+j*10+k)
             else:
                 print('no')
-                
-                
-
 
 '''
 7、输入某年某月某日，判断这一天是这一年的第几天？

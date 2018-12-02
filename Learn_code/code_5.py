@@ -21,7 +21,6 @@ def all_path(dirname):
         for filename in filenames:
             apath =os.path.join(maindir,filename)
             ext=os.path.splitext(apath)[1]
-
             if ext in filter1:
                 result.append(apath)
     return result

@@ -1,0 +1,3 @@
+[
+  "conf/api_login.py::Jingle_login::test_login"
+]

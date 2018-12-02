@@ -4,15 +4,8 @@
 # @Author  : dapengchiji！！
 # @FileName: 9*9.py
 
-# # 输出 9*9 乘法口诀表。
-for i in range(1,10):
-    for j in range(1,10):
-        print(j,"*",i,"=",i*j,"\t" ,end="")# 注意这里加上end = ''是防止换行.
-        if(j==i):
-            print("")
-            break
+# 输出 9*9 乘法口诀表。
 
-#输出 9*9
 for i in range(1, 10):
     for j in range(1, i + 1):
         k = i * j
@@ -47,16 +40,16 @@ print(list)
 
 # 从键盘输入一些字符，逐个把它们写到磁盘文件上，直到输入一个 # 为止。
 
-#if __name__ == '__main__':
-#    from sys import stdout
-#    filename = input('输入文件名:\n')
-#    fp = open(filename,"w")
-#    ch = input('输入字符串:\n')
-#    while ch != '#':
-#        fp.write(ch)
-#        stdout.write(ch)
-#        ch = input('')
-#    fp.close()
+if __name__ == '__main__':
+   from sys import stdout
+   filename = input('输入文件名:\n')
+   fp = open(filename,"w")
+   ch = input('输入字符串:\n')
+   while ch != '#':
+       fp.write(ch)
+       stdout.write(ch)
+       ch = input('')
+   fp.close()
 #
 # #利用条件运算符的嵌套来完成此题：学习成绩>=90分的同学用A表示，60-89分之间的用B表示，60分以下的用C表示。
 def function(score):
