@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-# !/usr/bin/python3
-# -*- coding: utf-8 -*-
 
 # 编写一个calculator，提示选择运算符，输入对应数据，继续输入数字，打印出最终计算结果
 def add(num1, num2):  # 加法

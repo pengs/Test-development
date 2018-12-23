@@ -65,3 +65,44 @@ slice = random.sample(list, 5)  # 从list中随机获取5个元素，作为一�
 print (slice)
 print (list)  # 原有序列并没有改变。
 
+
+# 生成9位纯数字密码
+
+# 方法1
+res = ''
+for i in range(9):
+    res += str(random.randint(0,9))
+print(res)
+
+# 方法2
+res1 = ''
+for i in range(9):
+    res1+=random.choice('0123456789')
+print(res1)
+
+# 方法3
+res2=''
+for i in range(9):
+    res2+=random.sample('0123456789',9)[1]
+print(res2)
+
+# 生成不重复的密码
+# 方法1
+
+result = ''
+while len(result)<9:
+    num = random.randint(0,9)
+    if str(num) not in result:
+        result+=str(num)
+print(result)
+
+# 方法2
+
+print("".join(random.sample('0123456789',9)))
+
+# 生成字母和数字密码
+res=""
+for i in range(3):
+    password=chr(random.randint(65,90))+str(random.randint(0,6))
+    res+=password
+print(res)
